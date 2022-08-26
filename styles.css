@@ -121,7 +121,7 @@ header nav {
 }
 
 .wrap {
-  width: 1170px;
+  max-width: 1170px;
   margin: auto;
   padding: 90px 0;
 }
@@ -365,4 +365,10 @@ footer a {
 
 footer .wrap {
   padding-bottom: 0px;
+}
+
+@media screen and (max-width: 575px){
+  .wrap {
+    
+  }
 }
