@@ -78,7 +78,7 @@ header nav {
 }
 
 .features-title {
-  font-size: 55px;
+  font-size: 3.68em;
 }
 
 .features-subtitle {
@@ -194,7 +194,7 @@ header nav {
 
 .btn-primary {
   background-color: #231f20;
-  color: #fff; 
+  color: #fff;
   transition: 0.2s;
 }
 .btn-primary:hover {
@@ -216,17 +216,17 @@ header nav {
   box-shadow: -12px 10px 15px 0px #0000004a;
 }
 
-.cta h3, p {
+.cta h3,
+p {
   font-size: 32px;
   margin: 3px;
 }
-
 
 .blog-head {
   text-align: center;
 }
 
-.blog-head p{
+.blog-head p {
   font-size: 18px;
 }
 
@@ -236,16 +236,16 @@ header nav {
   background-color: #231f20;
   color: #f1f1f2;
 }
-.blog-img img{
+.blog-img img {
   display: block;
   width: 400px;
   height: 370px;
 }
-.blog-author{
+.blog-author {
   font-size: 14px;
 }
 
-.blog-content .title{
+.blog-content .title {
   font-weight: 400;
   font-size: 48px;
   padding-top: 27px;
@@ -257,7 +257,7 @@ header nav {
   flex-direction: column;
   justify-content: center;
   margin-left: 78px;
-  margin-right: 100px; 
+  margin-right: 100px;
 }
 
 .blog-footer {
@@ -265,20 +265,17 @@ header nav {
   justify-content: space-between;
 }
 
-.blog-footer 
-.first-block,
+.blog-footer .first-block,
 .second-block {
   width: 570px;
   height: 290px;
-  background-color:rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
   transition: 0.3s;
 }
 
-.blog-footer 
-.first-block:hover,
+.blog-footer .first-block:hover,
 .second-block:hover {
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.05);
-
 }
 .block-name {
   font-size: 24px;
@@ -301,7 +298,7 @@ hr {
 }
 
 footer {
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .line {
@@ -330,7 +327,6 @@ footer {
   justify-content: center;
 }
 
-
 footer img {
   width: 40px;
 }
@@ -341,7 +337,7 @@ footer img {
 }
 
 footer .links {
-  display:  flex;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 300px;
@@ -367,8 +363,11 @@ footer .wrap {
   padding-bottom: 0px;
 }
 
-@media screen and (max-width: 575px){
-  .wrap {
-    
+@media screen and (max-width: 1025px) {
+  .features-title {
+    font-size: 2.3rem;
+  }
+  .features .find-gift {
+    border: none;
   }
 }
