@@ -4,9 +4,9 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   font-family: Gilroy;
-  font-size: 18px;
+  font-size: 1rem;
 }
 img {
   width: 100%;
@@ -18,7 +18,7 @@ a {
 
 header {
   background-color: #fafafa;
-  padding: 40px;
+  padding: 2.2em 2.2em;
 }
 .header-wrap {
   display: flex;
@@ -26,27 +26,34 @@ header {
   align-items: center;
 }
 header .logo {
-  width: 40px;
+  margin-right: 5em;
 }
 header nav {
-  width: 330px;
+  width: 20.6em;
+}
+@media screen and (min-width: 391px) {
+  .checkbtn,
+  .btn,
+  .header-wrap label {
+    display: none;
+  }
 }
 .nav {
   padding: 0;
   margin: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .gift-finder {
-  width: 140px;
+  width: 8.74em;
   border: 1px solid #f7941e;
   border-radius: 5px;
   color: #f7941e;
   text-transform: uppercase;
   text-align: center;
-  line-height: 40px;
+  line-height: 2.5em;
 }
 
 .features {
@@ -68,7 +75,7 @@ header nav {
 }
 
 .features .content {
-  width: 430px;
+  width: 400px;
   margin: auto;
 }
 
@@ -78,26 +85,28 @@ header nav {
 }
 
 .features-title {
-  font-size: 3.68em;
+  font-size: 3.5em;
+  font-weight: 600;
 }
 
 .features-subtitle {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
 }
 .features-desc p {
-  font-size: 20px;
+  font-size: 1.25em;
+  text-align: justify;
 }
 .features .find-gift {
-  width: 200px;
-  height: 60px;
+  width: 12.5em;
+  height: 3.75em;
+  line-height: 3.75em;
+  margin-top: 3.4em;
   border: 1px solid #f7941e;
   border-radius: 5px;
-  line-height: 60px;
   color: #f7941e;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 55px;
   transition: 0.2s;
 }
 
@@ -112,6 +121,7 @@ header nav {
   margin-top: 40px;
   transition: 0.2s;
 }
+
 .gift-finder:hover,
 .find-gift:hover,
 .learn-more-btn:hover {
@@ -123,15 +133,15 @@ header nav {
 .wrap {
   max-width: 1170px;
   margin: auto;
-  padding: 90px 0;
+  padding: 5% 0;
 }
 
 .title {
-  font-size: 32px;
+  font-size: 2em;
   font-weight: 400;
 }
 .subtitle {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 300;
 }
 
@@ -161,7 +171,7 @@ header nav {
 }
 .occasion-cards .see-more {
   margin-top: 75px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .cta {
@@ -184,10 +194,11 @@ header nav {
 }
 
 .cta-buttons div {
-  width: 200px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
+  width: 12.5em;
+  height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   text-transform: uppercase;
 }
@@ -195,6 +206,7 @@ header nav {
 .btn-primary {
   background-color: #231f20;
   color: #fff;
+  border: 1px solid #231f20;
   transition: 0.2s;
 }
 .btn-primary:hover {
@@ -206,7 +218,7 @@ header nav {
 }
 
 .btn-secondary {
-  border: 2px solid black;
+  border: 1px solid black;
 }
 .btn-secondary:hover {
   background-color: #e6e6e6;
@@ -218,7 +230,7 @@ header nav {
 
 .cta h3,
 p {
-  font-size: 32px;
+  font-size: 2em;
   margin: 3px;
 }
 
@@ -227,27 +239,26 @@ p {
 }
 
 .blog-head p {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .blog-content {
   display: flex;
-  margin-top: 70px;
+  margin: 4.4em 4.4em 0;
   background-color: #231f20;
   color: #f1f1f2;
 }
 .blog-img img {
   display: block;
-  width: 400px;
-  height: 370px;
+  width: 25em;
 }
 .blog-author {
-  font-size: 14px;
+  font-size: 0.875em;
 }
 
 .blog-content .title {
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3em;
   padding-top: 27px;
   padding-bottom: 60px;
 }
@@ -278,16 +289,16 @@ p {
   box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.05);
 }
 .block-name {
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 700;
 }
 .blog-footer .subtitle {
-  font-size: 14px;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
 .block-content {
-  padding: 50px;
+  padding: 3em;
 }
 .blog-footer .block-desc {
   padding-top: 16px;
@@ -364,10 +375,168 @@ footer .wrap {
 }
 
 @media screen and (max-width: 1025px) {
-  .features-title {
-    font-size: 2.3rem;
+  body {
+    font-size: 0.8rem;
   }
-  .features .find-gift {
-    border: none;
+
+  .occasion-cards {
+    justify-content: space-evenly;
+  }
+  .cards-item {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    font-size: 0.6rem;
+  }
+  .features .content {
+    width: 70%;
+  }
+
+  .cta h3,
+  p {
+    margin: 3px;
+  }
+  .cta-action {
+    width: 54%;
+  }
+  .cta-buttons div {
+    justify-content: space-evenly;
+  }
+
+  .features .find-gift,
+  .learn-more-btn {
+    width: 50%;
+    height: 0%;
+    line-height: 3.25em;
+    margin-top: 10%;
+  }
+  .cta-buttons {
+    justify-content: space-evenly;
+  }
+  .cta .wrap {
+    padding: 4%;
+  }
+  .block-content {
+    margin: 70px 70px 0;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  body {
+    font-size: 0.5rem;
+  }
+  .btn {
+    width: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #check {
+    display: none;
+  }
+  header .logo {
+    margin: 0;
+  }
+
+  .features-title {
+    font-size: 2.2em;
+  }
+  .nav {
+    display: none;
+  }
+  .gift-finder {
+    display: none;
+  }
+
+  .features-info,
+  .features-work {
+    flex-wrap: wrap;
+    font-size: 1rem;
+  }
+  .features-work {
+    flex-direction: column-reverse;
+  }
+  .features-desc {
+    margin: 4em 0;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+  .features-desc,
+  .features-img {
+    width: 100%;
+  }
+  .wrap {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .occasion-cards {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .cards-item {
+    width: 43%;
+    margin-bottom: 4%;
+  }
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    height: 10rem;
+    margin-top: 1rem;
+  }
+  .cta-buttons div {
+    height: 3rem;
+  }
+  .blog-head {
+    margin: 3rem 3rem;
+  }
+  .blog-content {
+    flex-wrap: wrap;
+  }
+  .blog-info {
+    margin: 5.5rem 2rem;
+  }
+  .blog-footer {
+    flex-wrap: wrap;
+  }
+  .blog-footer .first-block,
+  .second-block {
+    width: 100%;
+    margin: 1rem;
+  }
+  .block-content {
+    margin: 0;
+    padding: 22px 5px;
+  }
+  .blog-footer .subtitle {
+    font-size: 1rem;
+  }
+  .nav-wrap,
+  .footer-logo {
+    width: auto;
+  }
+  .line {
+    margin: 1rem;
+  }
+  .line hr {
+    width: 20rem;
+  }
+  .credits {
+    margin: auto;
   }
 }
